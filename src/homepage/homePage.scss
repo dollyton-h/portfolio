@@ -118,8 +118,12 @@
       text-decoration: none;
     }
     &:hover {
-      background-color: rgb(29, 28, 28);
-      border: 1px solid yellow;
+      background-color: orange;
+      color: black;
+
+      letter-spacing: 1px;
+      font-size: 15px;
+      font-family: "Rubik", sans-serif;
     }
   }
 }

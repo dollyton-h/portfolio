@@ -59,7 +59,7 @@ function HomePage() {
           <li>
             {" "}
             <Link
-              to="/"
+              to="/skills"
               onClick={() => {
                 let hero = document.getElementById("skillsComponent");
                 hero &&

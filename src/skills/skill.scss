@@ -25,8 +25,92 @@
   font-weight: bold;
   letter-spacing: 3px;
 }
+.gr-bawah {
+  margin-top: 10px;
+  width: 760px;
+  margin-left: 20px;
+  border-bottom: 3px solid orange;
+}
+.header-card {
+  display: flex;
+  .btn1-active {
+    margin: 10px 0px 0px 20px;
+    background-color: orange;
+    height: 30px;
+    width: 200px;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn1-null {
+    margin: 10px 0px 0px 20px;
+    font-family: "Rubik", sans-serif;
+    height: 30px;
+    width: 200px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .head1 {
+    height: 10px;
+    width: 10px;
+    margin: 20px 0px 0px 290px;
+    border-radius: 50px;
+    background-color: red;
+  }
+  .head2 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    margin: 20px 10px 0px 10px;
+    background-color: orange;
+  }
+  .head3 {
+    height: 10px;
+    width: 10px;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: green;
+  }
+}
 
-.lang {
+.languages {
+  .lang {
+    color: white;
+    margin: 20px 0px 10px 20px;
+    font-family: "Rubik", sans-serif;
+  }
+  img {
+    height: 70px;
+    width: 70px;
+    margin: 0px 10px 15px 15px;
+  }
+  .css {
+    width: 52px;
+  }
+
+  .react {
+    height: 58px;
+  }
+}
+
+.content-skills {
+}
+
+.ll,
+.dd {
   color: white;
-  margin: 20px 0px 10px 20px;
+}
+
+.inpt {
+  color: orange;
+}
+
+.cekck {
+  width: 760px;
+  margin-top: 5px;
+  margin-left: 20px;
+  height: 30px;
+  background-color: white;
 }
