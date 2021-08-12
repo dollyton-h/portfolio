@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.skill-main {
+  display: flex;
+  justify-content: center;
+}
+.main-card {
+  height: 400px;
+  width: 800px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: -80px;
+  box-shadow: orange 0px 3px 8px;
+}
+
+.skill-title {
+  color: white;
+  margin: 20px 0px 0px 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.lang {
+  color: white;
+  margin: 20px 0px 10px 20px;
+}
+
+.languages {
+  ul {
+    margin: 20px 0px 0px 20px;
+    text-decoration: none;
+  }
+  li {
+    text-decoration: none;
+    margin: 10px 0px 0px 0px;
+    svg {
+      &:hover {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &:hover {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

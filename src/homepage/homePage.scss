@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.main {
+  background-color: black;
+  height: 100vh;
+  overflow: auto;
+}
+
+.head {
+  display: flex;
+}
+
+.logo {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 30px 0px 0px 30px;
+  cursor: pointer;
+  width: 150px;
+  color: white;
+  letter-spacing: 2px;
+  &:hover {
+    opacity: 60%;
+  }
+}
+
+.nav {
+  display: flex;
+  color: white;
+  margin-top: 48px;
+  margin-left: 550px;
+
+  li {
+    margin-left: 70px;
+
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 1px;
+    border: none;
+    color: white;
+    position: relative;
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: orange;
+        // border-bottom: 1px solid orange;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        left: 50%;
+        bottom: 0;
+        background-color: orange;
+        transition: all ease-in-out 0.15s;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+.hello {
+  color: orange;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 130px;
+  letter-spacing: 2px;
+  font-family: "Rubik", sans-serif;
+}
+
+.nama {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.front {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 1px;
+}
+.home-btn {
+  display: flex;
+  justify-content: center;
+  .btn-more {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: "Rubik", sans-serif;
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    border: 1px solid orange;
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 5px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: rgb(29, 28, 28);
+      border: 1px solid yellow;
+    }
+  }
+}
+
+.social-logo {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.git {
+  margin: 2px 50px 0px 50px;
+  cursor: pointer;
+}
+
+.link,
+.twit {
+  cursor: pointer;
+}
+
+.skillss {
+  color: white;
+}
+
+.aboutComponent {
+  margin-top: 140px;
+}
