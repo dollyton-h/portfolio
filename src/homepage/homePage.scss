@@ -140,10 +140,28 @@
   cursor: pointer;
 }
 
+.twit,
+.link,
+.git {
+  &:hover {
+    background-color: orange;
+    padding: 1px 1px;
+  }
+}
+
 .skillss {
   color: white;
 }
 
 .aboutComponent {
-  margin-top: 140px;
+  margin-top: -41px;
+}
+
+.illu {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+  img {
+    height: 300px;
+  }
 }

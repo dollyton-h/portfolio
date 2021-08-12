@@ -11,40 +11,6 @@ function Skill() {
           <div className="content-skills">
             <div className="languages">
               <p className="lang">Languages I speak</p>
-              <ul>
-                <li>
-                  <Icon
-                    icon="logos:html-5"
-                    color="orange"
-                    width="30"
-                    height="30"
-                  />
-                </li>
-                <li>
-                  <Icon
-                    icon="logos:css-3"
-                    color="orange"
-                    width="40"
-                    height="40"
-                  />
-                </li>
-                <li>
-                  <Icon
-                    icon="logos:javascript"
-                    color="orange"
-                    width="40"
-                    height="40"
-                  />
-                </li>
-                <li>
-                  <Icon
-                    icon="logos:react"
-                    color="orange"
-                    width="40"
-                    height="40"
-                  />
-                </li>
-              </ul>
             </div>
           </div>
         </div>

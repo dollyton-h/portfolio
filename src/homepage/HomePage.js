@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import About from "../about/About";
+import illu from "../assets/asd.png";
 
 import { AiFillTwitterSquare, AiFillLinkedin } from "react-icons/ai";
 import { FaGithubSquare } from "react-icons/fa";
@@ -60,7 +61,7 @@ function HomePage() {
             <Link
               to="/"
               onClick={() => {
-                let hero = document.getElementById("HOME");
+                let hero = document.getElementById("skillsComponent");
                 hero &&
                   hero.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
@@ -89,18 +90,16 @@ function HomePage() {
       <br />
       <h4 className="front">FRONT-END DEVELOPER</h4>
       <div className="home-btn">
-        <button className="btn-more">
-          <Link
-            to="/about"
-            onClick={() => {
-              let about = document.getElementById("aboutComponent");
-              about &&
-                about.scrollIntoView({ behavior: "smooth", block: "start" });
-            }}
-          >
-            More About Me
-          </Link>
-        </button>
+        <Link
+          to="/about"
+          onClick={() => {
+            let about = document.getElementById("aboutComponent");
+            about &&
+              about.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+        >
+          <button className="btn-more">More About Me</button>
+        </Link>
       </div>
 
       <div className="social-logo">
@@ -133,12 +132,15 @@ function HomePage() {
           </a>
         </div>
       </div>
+      <div className="illu">
+        <img src={illu} alt="illu" />
+      </div>
       <div className="aboutComponent" id="aboutComponent">
         <br />
         <br />
         <About />
       </div>
-      <div>
+      <div className="skillsComponent" id="skillsComponent">
         <Skill />
       </div>
     </div>
