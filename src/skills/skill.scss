@@ -55,7 +55,7 @@
   .head1 {
     height: 10px;
     width: 10px;
-    margin: 20px 0px 0px 290px;
+    margin: 20px 0px 0px 285px;
     border-radius: 50px;
     background-color: red;
   }
@@ -75,42 +75,101 @@
   }
 }
 
+.cekck {
+  width: 665px;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 10px;
+  overflow: auto;
+  display: flex;
+  .wari {
+    margin-top: 4px;
+    margin-left: 10px;
+    justify-content: left;
+  }
+  p {
+    width: 200px;
+    margin-left: -15px;
+    margin-top: 6px;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+  }
+  div {
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 400px;
+
+    display: flex;
+    justify-content: center;
+    svg {
+    }
+  }
+}
+
+.addre {
+  display: flex;
+  margin-top: 5px;
+  .backar {
+    margin-left: 20px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+  .backarr {
+    margin-left: 10px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+}
+
 .languages {
+  display: flex;
   .lang {
     color: white;
     margin: 20px 0px 10px 20px;
     font-family: "Rubik", sans-serif;
   }
-  img {
-    height: 70px;
+  .htm {
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+  }
+  .cs {
     width: 70px;
-    margin: 0px 10px 15px 15px;
+    height: 100px;
+    margin-left: 20px;
   }
-  .css {
-    width: 52px;
+  .js {
+    width: 165px;
+    height: 90px;
+    margin-top: 13px;
   }
-
-  .react {
-    height: 58px;
+  .reac {
+    width: 90px;
+    height: 80px;
+    margin-left: 35px;
+    margin-top: 15px;
   }
 }
 
-.content-skills {
+.strr {
+  cursor: pointer;
 }
 
-.ll,
-.dd {
-  color: white;
+.main-lang {
+  h1 {
+    color: white;
+    margin: 10px 0px 0px 20px;
+    font-family: "Rubik", sans-serif;
+  }
 }
 
-.inpt {
-  color: orange;
-}
-
-.cekck {
-  width: 760px;
-  margin-top: 5px;
-  margin-left: 20px;
-  height: 30px;
-  background-color: white;
+.main-dev {
+  h1 {
+    color: white;
+    margin: 10px 0px 0px 20px;
+    font-family: "Rubik", sans-serif;
+  }
 }

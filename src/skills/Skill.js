@@ -4,10 +4,19 @@ import { Icon } from "@iconify/react";
 import htm from "../assets/html.png";
 import css from "../assets/css.png";
 import react from "../assets/react.png";
-import js from "../assets/js.png";
+import js from "../assets/jss.png";
 
 function Skill() {
   const [active, setActive] = useState({ lang: true, devt: false });
+  const [star, setStar] = useState(false);
+
+  const handleStar = () => {
+    if (star === true) {
+      setStar(false);
+    } else if (star === false) {
+      setStar(true);
+    }
+  };
 
   const handleLang = () => {
     setActive({ lang: true, devt: false });
@@ -42,12 +51,59 @@ function Skill() {
             <div className="head2"></div>
             <div className="head3"></div>
           </div>
-          <div className="cekck">
-            {active.lang === true ? (
-              <p>www.my-languages.com</p>
-            ) : (
-              <p>www.my-dev_tools.com</p>
-            )}
+          <div className="addre">
+            <div className="backar">
+              <Icon
+                icon="ant-design:arrow-left-outlined"
+                color={active.lang === true ? "grey" : "white"}
+                width="20"
+                height="20"
+                onClick={handleLang}
+              />
+            </div>
+            <div className="backarr">
+              <Icon
+                icon="ant-design:arrow-right-outlined"
+                color={active.lang === true ? "white" : "grey"}
+                width="20"
+                height="20"
+                onClick={handleDevt}
+              />
+            </div>
+            <div className="backarr">
+              <Icon
+                icon="eva:refresh-fill"
+                color="white"
+                width="20"
+                height="20"
+              />
+            </div>
+
+            <div className="cekck">
+              <div className="wari">
+                <Icon
+                  icon="carbon:warning"
+                  color="gray"
+                  width="22"
+                  height="22"
+                />
+              </div>
+
+              {active.lang === true ? (
+                <p>www.my-languages.com</p>
+              ) : (
+                <p>www.my-devtools.com</p>
+              )}
+              <div className="strr">
+                <Icon
+                  icon="ant-design:star-outlined"
+                  onClick={handleStar}
+                  color={star === true ? "#f2f216" : "grey"}
+                  width="20"
+                  height="20"
+                />
+              </div>
+            </div>
           </div>
           <div className="gr-bawah"></div>
 
@@ -62,7 +118,23 @@ function Skill() {
 function Lang() {
   return (
     <div>
-      <p className="ll">ini lang</p>
+      <div className="main-lang">
+        <h1>Languages & Library</h1>
+        <div className="languages">
+          <div>
+            <img className="htm" src={htm} />
+            <div>
+              <img className="cs" src={css} />
+            </div>
+          </div>
+          <div>
+            <img className="js" src={js} />
+            <div>
+              <img className="reac" src={react} />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -70,7 +142,9 @@ function Lang() {
 function Devt() {
   return (
     <div>
-      <p className="dd">ini dev</p>
+      <div className="main-dev">
+        <h1>Development Tools I use</h1>
+      </div>
     </div>
   );
 }
