@@ -5,6 +5,12 @@ import htm from "../assets/html.png";
 import css from "../assets/css.png";
 import react from "../assets/react.png";
 import js from "../assets/jss.png";
+import boots from "../assets/boots.png";
+import giit from "../assets/giit.png";
+import postman from "../assets/postman.png";
+import redux from "../assets/redux.png";
+import saas from "../assets/saas.png";
+import trello from "../assets/trello.png";
 
 function Skill() {
   const [active, setActive] = useState({ lang: true, devt: false });
@@ -140,7 +146,17 @@ function Devt() {
   return (
     <div>
       <div className="main-dev">
-        <h1>Development Tools I use</h1>
+        <div className="poto-dev">
+          <div className="ssas">
+            <img src={saas} />
+          </div>
+
+          <img src={giit} />
+          <img src={boots} />
+          <img src={postman} />
+          <img src={redux} />
+          <img src={trello} />
+        </div>
       </div>
     </div>
   );
