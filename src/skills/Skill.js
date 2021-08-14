@@ -98,7 +98,7 @@ function Skill() {
                 <Icon
                   icon="ant-design:star-outlined"
                   onClick={handleStar}
-                  color={star === true ? "#f2f216" : "grey"}
+                  color={star === true ? "#f3bb5c" : "grey"}
                   width="20"
                   height="20"
                 />
@@ -119,20 +119,17 @@ function Lang() {
   return (
     <div>
       <div className="main-lang">
-        <h1>Languages & Library</h1>
         <div className="languages">
-          <div>
-            <img className="htm" src={htm} />
-            <div>
-              <img className="cs" src={css} />
-            </div>
+          <div className="htm">
+            <img src={htm} />
           </div>
-          <div>
-            <img className="js" src={js} />
-            <div>
-              <img className="reac" src={react} />
-            </div>
+          <div className="cs">
+            <img src={css} />
           </div>
+
+          <img className="js" src={js} />
+
+          <img className="reac" src={react} />
         </div>
       </div>
     </div>

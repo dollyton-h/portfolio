@@ -8,15 +8,15 @@
 .skill-main {
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: whitesmoke;
 }
 .main-card {
   height: 400px;
   width: 800px;
-  background-color: black;
+  background-color: #dcdde2;
   border-radius: 20px;
-  margin-top: -80px;
-  box-shadow: orange 0px 3px 8px;
+
+  box-shadow: #b7ced2 0px 3px 8px;
 }
 
 .skill-title {
@@ -30,18 +30,18 @@
   margin-top: 10px;
   width: 760px;
   margin-left: 20px;
-  border-bottom: 3px solid orange;
+  border-bottom: 3px solid #f3bb5c;
 }
 .header-card {
   display: flex;
   .btn1-active {
     margin: 10px 0px 0px 20px;
-    background-color: orange;
+    background-color: #f3bb5c;
     height: 30px;
     width: 200px;
     font-family: "Rubik", sans-serif;
     letter-spacing: 2px;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
   }
   .btn1-null {
@@ -50,7 +50,7 @@
     height: 30px;
     width: 200px;
     letter-spacing: 2px;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
   }
   .head1 {
@@ -65,7 +65,7 @@
     width: 10px;
     border-radius: 50px;
     margin: 20px 10px 0px 10px;
-    background-color: orange;
+    background-color: #f3bb5c;
   }
   .head3 {
     height: 10px;
@@ -81,8 +81,8 @@
   margin-top: 5px;
   margin-left: 10px;
   height: 30px;
-  background-color: white;
-  border: 2px solid orange;
+  background-color: whitesmoke;
+  border: 2px solid #f3bb5c;
   border-radius: 10px;
   overflow: auto;
   display: flex;
@@ -127,31 +127,59 @@
 
 .languages {
   display: flex;
+  margin-top: 90px;
+  justify-content: center;
   .lang {
     color: white;
     margin: 20px 0px 10px 20px;
     font-family: "Rubik", sans-serif;
   }
   .htm {
-    width: 100px;
-    height: 100px;
-    margin-left: 5px;
+    width: 90px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 60px;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      margin-top: -19px;
+    }
   }
   .cs {
-    width: 70px;
-    height: 100px;
-    margin-left: 20px;
+    width: 90px;
+    height: 82px;
+    transition: transform 0.2s;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.2);
+    }
+    img {
+      width: 70px;
+      height: 100px;
+      margin-top: -19px;
+    }
   }
   .js {
     width: 165px;
     height: 90px;
-    margin-top: 13px;
+    margin-top: -4px;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .reac {
     width: 90px;
     height: 80px;
-    margin-left: 35px;
-    margin-top: 15px;
+    margin-left: 15px;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
