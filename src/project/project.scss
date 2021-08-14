@@ -1,0 +1,18 @@
+.projectComponent {
+  background-color: white;
+}
+
+.project-title {
+  display: flex;
+  justify-content: left;
+  margin-left: 100px;
+  padding-top: 200px;
+  h1 {
+    color: white;
+  }
+}
+.project1 {
+  height: 200px;
+  width: 300px;
+  border: 2px solid orange;
+}
