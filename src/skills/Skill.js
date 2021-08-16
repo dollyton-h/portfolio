@@ -37,8 +37,8 @@ function Skill() {
   console.log(active);
   return (
     <div>
-      <div className="skill-main">
-        <div id="skill-main" className="main-card">
+      <div className="skill-main" id="skill-main">
+        <div className="main-card">
           <div className="header-card">
             <button
               className={`btn1-${active.lang ? "active" : null}`}

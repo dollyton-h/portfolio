@@ -11,7 +11,7 @@ function About() {
   return (
     <section className="aboutComponents" id="">
       <div className="about-main" id="about-main">
-        <p className="about-title" data-aos="fade-down">
+        <p className="about-title" id="about-title" data-aos="fade-down">
           ABOUT ME
         </p>
         <div className="about-fir" data-aos="slide-right">

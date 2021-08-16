@@ -1,5 +1,5 @@
 .projectComponent {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .project-title {
@@ -15,16 +15,4 @@
   height: 200px;
   width: 300px;
   border: 2px solid orange;
-}
-
-.poto-dev {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  img {
-    margin-right: 20px;
-    margin-left: 20px;
-    height: 80px;
-    width: 80px;
-  }
 }

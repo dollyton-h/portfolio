@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import About from "../about/About";
 import illu from "../assets/asd.png";
+import dy from "../assets/default-r.png";
 
 import { AiFillTwitterSquare, AiFillLinkedin } from "react-icons/ai";
 import { FaGithubSquare } from "react-icons/fa";
@@ -11,6 +12,7 @@ import "./homePage.scss";
 import Skill from "../skills/Skill";
 
 function HomePage() {
+  const [show, setShow] = useState(false);
   const myRef = useRef(null);
   const [scro, setScro] = useState(false);
 
@@ -21,15 +23,21 @@ function HomePage() {
   //   element && element.scrollIntoView({ behavior: "smooth", block: "start" });
   // }, []);
 
+  window.addEventListener("scroll", function () {
+    var heads = document.getElementById("heads");
+    heads.classList.toggle("sticky", window.scrollY > 0);
+  });
+
   useEffect(() => {
     document.title = "Dollyton Hutapea";
   }, []);
   return (
     <div className="main" id="main">
-      <div className={scro ? "head-active" : "head"} id="head">
-        <p className="logo" id="HOME">
-          DY
-        </p>
+      <div className="heads" id="heads">
+        <div className="logo" id="HOME">
+          <img src={dy} />
+        </div>
+
         <ul className="nav">
           <li>
             <Link to="main" smooth={true} duration={1000}>
@@ -38,7 +46,7 @@ function HomePage() {
           </li>
 
           <li>
-            <Link to="about-main" smooth={true} duration={1000}>
+            <Link to="about-title" smooth={true} duration={1000}>
               ABOUT
             </Link>
           </li>
