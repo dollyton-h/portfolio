@@ -57,7 +57,7 @@ function HomePage() {
             </Link>
           </li>
           <li>
-            <Link to="project" smooth={true} duration={1000}>
+            <Link to="projectComponent" smooth={true} duration={1000}>
               PROJECTS
             </Link>
           </li>
