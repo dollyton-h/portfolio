@@ -34,9 +34,11 @@ function HomePage() {
   return (
     <div className="main" id="main">
       <div className="heads" id="heads">
-        <div className="logo" id="HOME">
-          <img src={dy} />
-        </div>
+        <Link to="main" smooth={true} duration={1000}>
+          <div className="logo" id="HOME">
+            <img src={dy} />
+          </div>{" "}
+        </Link>
 
         <ul className="nav">
           <li>
@@ -75,7 +77,7 @@ function HomePage() {
       <br />
       <h4 className="front">FRONT-END DEVELOPER</h4>
       <div className="home-btn">
-        <Link to="aboutComponent" smooth={true} duration={1000}>
+        <Link to="about-title" smooth={true} duration={1000}>
           <button className="btn-more">More About Me</button>
         </Link>
       </div>
