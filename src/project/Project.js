@@ -22,7 +22,18 @@ function Project() {
               <img className="img2" src={details1} />
               <img className="img3" src={give} />
             </div>
-            <p className="title-pr1">Milan TV</p>
+
+            <p className="title-pr1">
+              {" "}
+              <a
+                href="https://milan-tv.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Milan TV
+              </a>
+            </p>
+
             <p className="des-pr1">
               A Movie Review Website using HTML/CSS, Javascript and ReactJs
               <br />
@@ -35,7 +46,15 @@ function Project() {
               <img className="img3" src={tt3} />
               <img className="img4" src={tt4} />
             </div>
-            <p className="title-pr1">Tutorin</p>
+            <p className="title-pr1">
+              <a
+                href="https://milan-tv.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Tutorin
+              </a>
+            </p>
             <p className="des-pr1">
               A Learning Website Application using HTML/CSS, Javascript and
               ReactJs

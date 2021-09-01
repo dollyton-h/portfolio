@@ -74,11 +74,15 @@
 
 .title-pr1 {
   font-family: "Rubik", sans-serif;
+  text-decoration: none;
   text-align: center;
   margin: 5px 0px 5px 0px;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 20px;
+  a {
+    color: black;
+  }
 }
 
 .des-pr1 {
