@@ -73,13 +73,13 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div>
-          <p>Wants to Hire me? </p>
+        <div className="resu">
+          <h4>Wants to Hire me? </h4>
 
           <p>
             Download My resume here :{" "}
             <a href={pdf} target="_blank">
-              Download Pdf
+              Resume Pdf
             </a>
           </p>
         </div>
