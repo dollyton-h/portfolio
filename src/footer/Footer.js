@@ -3,7 +3,7 @@ import "./footer.scss";
 import { AiFillTwitterSquare, AiFillLinkedin } from "react-icons/ai";
 import { FaGithubSquare, FaMapMarkerAlt } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
-import pdf from "../assets/Dollyton Hutapea.pdf";
+import pdf from "../assets/Resume Dollyton Hutapea.pdf";
 
 function Footer() {
   return (
