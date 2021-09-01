@@ -48,7 +48,7 @@ function Project() {
             </div>
             <p className="title-pr1">
               <a
-                href="https://milan-tv.netlify.app/"
+                href="https://tutorin-web.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
