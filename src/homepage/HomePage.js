@@ -34,36 +34,37 @@ function HomePage() {
   return (
     <div className="main" id="main">
       <div className="heads" id="heads">
-        <Link to="main" smooth={true} duration={1000}>
-          <div className="logo" id="HOME">
+        <div className="logo" id="HOME">
+          <Link to="main" smooth={true} duration={1000}>
             <img src={dy} />
-          </div>{" "}
-        </Link>
+          </Link>
+        </div>{" "}
+        <div className="nav">
+          <ul>
+            <li>
+              <Link to="main" smooth={true} duration={1000}>
+                HOME
+              </Link>
+            </li>
 
-        <ul className="nav">
-          <li>
-            <Link to="main" smooth={true} duration={1000}>
-              HOME
-            </Link>
-          </li>
+            <li>
+              <Link to="about-title" smooth={true} duration={1000}>
+                ABOUT
+              </Link>
+            </li>
 
-          <li>
-            <Link to="about-title" smooth={true} duration={1000}>
-              ABOUT
-            </Link>
-          </li>
-
-          <li>
-            <Link to="skill-main" smooth={true} duration={1000}>
-              SKILLS
-            </Link>
-          </li>
-          <li>
-            <Link to="projectComponent" smooth={true} duration={1000}>
-              PROJECTS
-            </Link>
-          </li>
-        </ul>
+            <li>
+              <Link to="skill-main" smooth={true} duration={1000}>
+                SKILLS
+              </Link>
+            </li>
+            <li>
+              <Link to="projectComponent" smooth={true} duration={1000}>
+                PROJECTS
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <br />
