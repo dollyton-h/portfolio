@@ -69,7 +69,7 @@ function HomePage() {
 
       <br />
       <div className="sda">
-        <h1 className="nama">Dollyton Hutapea</h1>
+        <h1 className="nama">Dollytonss Hutapea</h1>
         <div className="illu">
           <img src={illu} alt="illu" />
         </div>
